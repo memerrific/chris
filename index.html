@@ -185,6 +185,11 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
 @media (max-width: 860px) { .gallery .half { grid-column: span 1; } .gallery .half .frame { aspect-ratio: 4 / 5; } }
 @media (max-width: 520px) { .gallery .half { grid-column: auto; } }
 @media (prefers-reduced-motion: reduce) { .gallery figure:hover img { transform: none; } }
+.pillars .swatch img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery .third { grid-column: span 4; }
+.gallery .third .frame { aspect-ratio: 4 / 5; }
+@media (max-width: 860px) { .gallery .third { grid-column: span 1; } .gallery .third:first-child { grid-column: span 2; } .gallery .third:first-child .frame { aspect-ratio: 4 / 3; } }
+@media (max-width: 520px) { .gallery .third, .gallery .third:first-child { grid-column: auto; } .gallery .third:first-child .frame { aspect-ratio: 4 / 5; } }
 </style>
 </head>
 <body>
@@ -243,7 +248,7 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
           <p>We visit, listen and measure, then help you choose a layout, tiles and fittings that suit your home and how you use the room.</p>
         </article>
         <article>
-          <div class="swatch"><canvas data-pattern="clips" data-tiles="#d9d7d2,#d3d1cb" data-grout="#5d5a56" data-unit="120" role="img" aria-label="large-format wall mid-install with levelling clips"></canvas></div>
+          <div class="swatch"><img src="images/levelling-clips.jpg" alt="Large-format wall tiles mid-install, held flat with orange levelling clips" loading="lazy"></div>
           <h3>Preparation</h3>
           <p>Walls boarded true, floors levelled and every wet area waterproofed. Large-format tiles go up with levelling clips so every face sits perfectly flush.</p>
         </article>
@@ -264,21 +269,17 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
         <p>A selection of rooms we've designed and built from start to finish.</p>
       </div>
       <div class="gallery">
-        <figure class="g1">
+        <figure class="third">
           <div class="frame"><img src="images/star-floor-bathroom.jpg" alt="Family bathroom with star-pattern floor tiles, grey walls and matt black fittings" loading="lazy" style="object-position: 50% 55%"></div>
-          <figcaption><strong>Family bathroom</strong><span>Star-pattern floor · tiled niches · matt black fittings</span></figcaption>
+          <figcaption><strong>Family bathroom</strong><span>Star-pattern floor · matt black fittings</span></figcaption>
         </figure>
-        <figure class="g2">
+        <figure class="third">
           <div class="frame"><img src="images/brass-twin-basins.jpg" alt="Twin basins with wall-mounted brushed brass taps and a terrazzo splashback" loading="lazy"></div>
-          <figcaption><strong>Twin basins</strong><span>Terrazzo splashback · wall-mounted brass taps</span></figcaption>
+          <figcaption><strong>Twin basins</strong><span>Terrazzo splashback · brass taps</span></figcaption>
         </figure>
-        <figure class="g3 half">
+        <figure class="third">
           <div class="frame"><img src="images/backlit-mirror.jpg" alt="Grey tiled shower room with a tiled ledge and backlit mirror cabinet" loading="lazy" style="object-position: 50% 45%"></div>
-          <figcaption><strong>Shower room</strong><span>Tiled ledge · backlit mirror cabinet</span></figcaption>
-        </figure>
-        <figure class="g4 half">
-          <div class="frame"><img src="images/levelling-clips.jpg" alt="Large-format wall tiles mid-install, held flat with orange levelling clips" loading="lazy"></div>
-          <figcaption><strong>Before the grout</strong><span>Large-format wall set with levelling clips</span></figcaption>
+          <figcaption><strong>Shower room</strong><span>Tiled ledge · backlit mirror</span></figcaption>
         </figure>
       </div>
     </div>
