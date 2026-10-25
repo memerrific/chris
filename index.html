@@ -177,6 +177,14 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
   .head, .statement .wrap, .hero .wrap { grid-template-columns: 1fr; }
   .head > .kicker, .head > h2, .head > p:not(.kicker), .statement .kicker, .statement h2, .statement .rule, .statement p:not(.kicker) { grid-column: 1; grid-row: auto; }
 }
+.hero-art img, .gallery .frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery .frame img { transition: transform 1.2s ease; }
+.gallery figure:hover img { transform: scale(1.04); }
+.gallery .half { grid-column: span 6; }
+.gallery .half .frame { aspect-ratio: 6 / 5; }
+@media (max-width: 860px) { .gallery .half { grid-column: span 1; } .gallery .half .frame { aspect-ratio: 4 / 5; } }
+@media (max-width: 520px) { .gallery .half { grid-column: auto; } }
+@media (prefers-reduced-motion: reduce) { .gallery figure:hover img { transform: none; } }
 </style>
 </head>
 <body>
@@ -207,7 +215,7 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
         </div>
       </div>
       <div class="hero-art">
-        <canvas data-pattern="slab" data-tiles="#f3f0ea,#efebe4" data-grout="#c9bfb2" data-unit="110" data-vein="176,140,90" role="img" aria-label="marble-effect shower with brushed brass fittings"></canvas>
+        <img src="images/brass-marble-shower.jpg" alt="Frameless shower with marble-effect tiles, a lit niche and brushed brass fittings" style="object-position: 50% 40%">
         
       </div>
     </div>
@@ -257,23 +265,19 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
       </div>
       <div class="gallery">
         <figure class="g1">
-          <div class="frame"><canvas data-pattern="slab" data-tiles="#f2efe9,#eeeae3" data-grout="#c6bcaf" data-unit="150" data-vein="176,140,90" role="img" aria-label="frameless shower in marble-effect tiles with brushed brass"></canvas></div>
-          <figcaption><strong>Brass &amp; marble shower</strong><span>Lit niche · brushed brass thermostatic · freestanding bath</span></figcaption>
+          <div class="frame"><img src="images/star-floor-bathroom.jpg" alt="Family bathroom with star-pattern floor tiles, grey walls and matt black fittings" loading="lazy" style="object-position: 50% 55%"></div>
+          <figcaption><strong>Family bathroom</strong><span>Star-pattern floor · tiled niches · matt black fittings</span></figcaption>
         </figure>
         <figure class="g2">
-          <div class="frame"><canvas data-pattern="terrazzo" data-tiles="#e3dcd1" data-grout="#d5ccbf" data-unit="300" role="img" aria-label="twin basins with terrazzo splashback and brass taps"></canvas></div>
+          <div class="frame"><img src="images/brass-twin-basins.jpg" alt="Twin basins with wall-mounted brushed brass taps and a terrazzo splashback" loading="lazy"></div>
           <figcaption><strong>Twin basins</strong><span>Terrazzo splashback · wall-mounted brass taps</span></figcaption>
         </figure>
-        <figure class="g3">
-          <div class="frame"><canvas data-pattern="star" data-tiles="#ecebe6" data-grout="#d6d4cf" data-unit="70" role="img" aria-label="family bathroom with black and white star floor"></canvas></div>
-          <figcaption><strong>Family bathroom</strong><span>Star-pattern floor · matt black fittings</span></figcaption>
-        </figure>
-        <figure class="g4">
-          <div class="frame"><canvas data-pattern="slab" data-tiles="#8f8d89,#979590" data-grout="#7a7874" data-unit="90" data-vein="210,208,204" role="img" aria-label="grey tiled shower room with backlit mirror"></canvas></div>
+        <figure class="g3 half">
+          <div class="frame"><img src="images/backlit-mirror.jpg" alt="Grey tiled shower room with a tiled ledge and backlit mirror cabinet" loading="lazy" style="object-position: 50% 45%"></div>
           <figcaption><strong>Shower room</strong><span>Tiled ledge · backlit mirror cabinet</span></figcaption>
         </figure>
-        <figure class="g5">
-          <div class="frame"><canvas data-pattern="clips" data-tiles="#d9d7d2,#d3d1cb" data-grout="#5d5a56" data-unit="110" role="img" aria-label="wall mid-install with levelling clips"></canvas></div>
+        <figure class="g4 half">
+          <div class="frame"><img src="images/levelling-clips.jpg" alt="Large-format wall tiles mid-install, held flat with orange levelling clips" loading="lazy"></div>
           <figcaption><strong>Before the grout</strong><span>Large-format wall set with levelling clips</span></figcaption>
         </figure>
       </div>
