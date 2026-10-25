@@ -136,7 +136,8 @@ form.q textarea { min-height: 96px; resize: vertical; }
 form.q input:focus, form.q select:focus, form.q textarea:focus { outline: none; border-bottom-color: var(--ink); }
 .rooms { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
 .rooms label { display: inline-flex; align-items: center; gap: 8px; text-transform: none; letter-spacing: 0.02em; font-size: 0.95rem; color: var(--ink); border: 1px solid var(--sand); padding: 10px 16px; cursor: pointer; border-radius: 999px; }
-.rooms input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.rooms label { position: relative; }
+.rooms input { position: absolute; inset: 0; opacity: 0; width: 1px; height: 1px; margin: 0; }
 .rooms label:has(input:checked) { background: var(--ink); color: var(--cream); border-color: var(--ink); }
 .rooms label:has(input:focus-visible) { outline: 1px solid var(--brass); outline-offset: 3px; }
 .form-foot { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
