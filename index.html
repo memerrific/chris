@@ -39,8 +39,6 @@ a { color: inherit; }
 .kicker { font: 400 0.72rem/1.4 var(--sans); letter-spacing: 0.28em; text-transform: uppercase; color: var(--brass); }
 .muted { color: var(--soft); }
 
-.concept { background: var(--linen); color: var(--soft); text-align: center; font-size: 0.78rem; letter-spacing: 0.06em; }
-.concept .wrap { padding-block: 8px; }
 
 header.site { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--cream) 94%, transparent); backdrop-filter: blur(6px); }
 header.site .wrap { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding-block: 22px; }
@@ -152,7 +150,6 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
 </head>
 <body>
 
-<div class="concept"><div class="wrap">Concept draft · photo spaces to be filled with Fast Flow's own work</div></div>
 
 <header class="site">
   <div class="wrap">
@@ -179,8 +176,8 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
         </div>
       </div>
       <div class="hero-art">
-        <canvas data-pattern="slab" data-tiles="#f3f0ea,#efebe4" data-grout="#c9bfb2" data-unit="110" data-vein="176,140,90" role="img" aria-label="Photo space: marble-effect shower with brushed brass fittings"></canvas>
-        <span class="slot">Photo · brass &amp; marble shower</span>
+        <canvas data-pattern="slab" data-tiles="#f3f0ea,#efebe4" data-grout="#c9bfb2" data-unit="110" data-vein="176,140,90" role="img" aria-label="marble-effect shower with brushed brass fittings"></canvas>
+        
       </div>
     </div>
   </section>
@@ -202,17 +199,17 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
       </div>
       <div class="pillars">
         <article>
-          <div class="swatch"><canvas data-pattern="zellige" data-tiles="#b8c5c1,#c1cdc9,#afbcb8,#c8d3cf,#b3c0bc" data-grout="#f1ede6" data-unit="46" role="img" aria-label="Photo space: mist sage handmade tiles"></canvas></div>
+          <div class="swatch"><canvas data-pattern="zellige" data-tiles="#b8c5c1,#c1cdc9,#afbcb8,#c8d3cf,#b3c0bc" data-grout="#f1ede6" data-unit="46" role="img" aria-label="mist sage handmade tiles"></canvas></div>
           <h3>Design</h3>
           <p>We visit, listen and measure, then help you choose a layout, tiles and fittings that suit your home and how you use the room.</p>
         </article>
         <article>
-          <div class="swatch"><canvas data-pattern="clips" data-tiles="#d9d7d2,#d3d1cb" data-grout="#5d5a56" data-unit="120" role="img" aria-label="Photo space: large-format wall mid-install with levelling clips"></canvas></div>
+          <div class="swatch"><canvas data-pattern="clips" data-tiles="#d9d7d2,#d3d1cb" data-grout="#5d5a56" data-unit="120" role="img" aria-label="large-format wall mid-install with levelling clips"></canvas></div>
           <h3>Preparation</h3>
           <p>Walls boarded true, floors levelled and every wet area waterproofed. Large-format tiles go up with levelling clips so every face sits perfectly flush.</p>
         </article>
         <article>
-          <div class="swatch"><canvas data-pattern="slab" data-tiles="#f1ebe1,#ebe3d6" data-grout="#dcd1c0" data-unit="120" role="img" aria-label="Photo space: marble-effect large tiles"></canvas></div>
+          <div class="swatch"><canvas data-pattern="slab" data-tiles="#f1ebe1,#ebe3d6" data-grout="#dcd1c0" data-unit="120" role="img" aria-label="marble-effect large tiles"></canvas></div>
           <h3>Tiling &amp; finish</h3>
           <p>Every room is set out so cuts sit evenly and edges are crisp. Then the suite, brassware and finishing touches go in with the same care.</p>
         </article>
@@ -229,23 +226,23 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
       </div>
       <div class="gallery">
         <figure class="g1">
-          <div class="frame"><canvas data-pattern="slab" data-tiles="#f2efe9,#eeeae3" data-grout="#c6bcaf" data-unit="150" data-vein="176,140,90" role="img" aria-label="Photo space: frameless shower in marble-effect tiles with brushed brass"></canvas><span class="slot">Photo · marble shower</span></div>
+          <div class="frame"><canvas data-pattern="slab" data-tiles="#f2efe9,#eeeae3" data-grout="#c6bcaf" data-unit="150" data-vein="176,140,90" role="img" aria-label="frameless shower in marble-effect tiles with brushed brass"></canvas></div>
           <figcaption><strong>Brass &amp; marble shower</strong><span>Lit niche · brushed brass thermostatic · freestanding bath</span></figcaption>
         </figure>
         <figure class="g2">
-          <div class="frame"><canvas data-pattern="terrazzo" data-tiles="#e3dcd1" data-grout="#d5ccbf" data-unit="300" role="img" aria-label="Photo space: twin basins with terrazzo splashback and brass taps"></canvas><span class="slot">Photo · twin basins</span></div>
+          <div class="frame"><canvas data-pattern="terrazzo" data-tiles="#e3dcd1" data-grout="#d5ccbf" data-unit="300" role="img" aria-label="twin basins with terrazzo splashback and brass taps"></canvas></div>
           <figcaption><strong>Twin basins</strong><span>Terrazzo splashback · wall-mounted brass taps</span></figcaption>
         </figure>
         <figure class="g3">
-          <div class="frame"><canvas data-pattern="star" data-tiles="#ecebe6" data-grout="#d6d4cf" data-unit="70" role="img" aria-label="Photo space: family bathroom with black and white star floor"></canvas><span class="slot">Photo · star floor</span></div>
+          <div class="frame"><canvas data-pattern="star" data-tiles="#ecebe6" data-grout="#d6d4cf" data-unit="70" role="img" aria-label="family bathroom with black and white star floor"></canvas></div>
           <figcaption><strong>Family bathroom</strong><span>Star-pattern floor · matt black fittings</span></figcaption>
         </figure>
         <figure class="g4">
-          <div class="frame"><canvas data-pattern="slab" data-tiles="#8f8d89,#979590" data-grout="#7a7874" data-unit="90" data-vein="210,208,204" role="img" aria-label="Photo space: grey tiled shower room with backlit mirror"></canvas><span class="slot">Photo · backlit mirror</span></div>
+          <div class="frame"><canvas data-pattern="slab" data-tiles="#8f8d89,#979590" data-grout="#7a7874" data-unit="90" data-vein="210,208,204" role="img" aria-label="grey tiled shower room with backlit mirror"></canvas></div>
           <figcaption><strong>Shower room</strong><span>Tiled ledge · backlit mirror cabinet</span></figcaption>
         </figure>
         <figure class="g5">
-          <div class="frame"><canvas data-pattern="clips" data-tiles="#d9d7d2,#d3d1cb" data-grout="#5d5a56" data-unit="110" role="img" aria-label="Photo space: wall mid-install with levelling clips"></canvas><span class="slot">Photo · work in progress</span></div>
+          <div class="frame"><canvas data-pattern="clips" data-tiles="#d9d7d2,#d3d1cb" data-grout="#5d5a56" data-unit="110" role="img" aria-label="wall mid-install with levelling clips"></canvas></div>
           <figcaption><strong>Before the grout</strong><span>Large-format wall set with levelling clips</span></figcaption>
         </figure>
       </div>
@@ -274,11 +271,8 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
       <aside>
         <p class="kicker">Begin your project</p>
         <h2 style="font-size:clamp(2.2rem,4.4vw,3.6rem)">Let's talk about <em>your bathroom</em></h2>
-        <p>Tell us a little about your plans and we'll be in touch to arrange a visit.</p>
+        <p>Tell us a little about your plans and we'll be in touch to arrange a visit. You can also see our latest projects on Instagram and Facebook.</p>
         <div class="details">
-          <div><span class="kicker">Telephone</span><span>[ number ]</span></div>
-          <div><span class="kicker">Email</span><span>[ email ]</span></div>
-          <div><span class="kicker">Areas we cover</span><span>[ areas ]</span></div>
           <div><span class="kicker">Follow our work</span><span><a href="https://www.instagram.com/fast_flow_maintenance/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/people/Fast-Flow-Maintenance/100057261287333/" target="_blank" rel="noopener">Facebook</a></span></div>
         </div>
       </aside>
@@ -306,7 +300,7 @@ footer.site p { color: var(--soft); font-size: 0.85rem; }
         <label class="full">Tell us about your ideas<textarea id="q-notes" name="notes" placeholder="Bath or walk-in shower, tiles you love, rooms you've seen…"></textarea></label>
         <div class="full form-foot">
           <button class="btn" type="submit">Send enquiry</button>
-          <span class="sent" id="sent" role="status" hidden>This is a concept, so the form isn't connected yet and nothing was sent.</span>
+          <span class="sent" id="sent" role="status" hidden>Thank you. This is a preview site, so enquiries aren't connected yet.</span>
         </div>
       </form>
     </div>
